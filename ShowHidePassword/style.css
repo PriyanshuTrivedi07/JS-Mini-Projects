@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;900&family=Raleway:wght@200;400;500;700;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --accent-color: #320101;
+    --text-color: #121212;
+    --warning-text-color: trasparent;
+}
+body {
+    background: linear-gradient(to right, #121212, var(--accent-color));
+    color: #fff;
+}
+
+
+.input-box {
+    font-size: 1.3rem;
+    background-color: #fff;
+    border: 1px solid var(--warning-text-color);
+    box-shadow: 0 0 5px var(--warning-text-color);
+}
+#password {
+    border: none;
+    outline: none;
+}
+.input-box i {
+    color: var(--text-color);
+    font-size: 1.8rem;
+}
+
+/* .slash{
+    
+    width: 35px;
+    background-color: #202020;
+    height: 4px;
+    border: 0.5px solid white;
+    border-radius: 12px;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 12px;
+    bottom: 28px;
+    transition: width 0.4s ease;
+}
+.slash.active{
+    width: 0px;
+} */
+
+
+#msg{
+    color: var(--warning-text-color);
+    text-shadow: 0 0 4px var(--warning-text-color);
+    display: none;
+}

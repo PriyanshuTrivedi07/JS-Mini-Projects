@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;900&family=Raleway:wght@200;400;500;700;800&display=swap');
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif; */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    /* --bg-color: #2d2d2d;
+    --imperial-red: #E54B4B;
+    --atomic-tangerine: #FFA987;
+    --sheashell: #F7EBE8;
+    --jet: #444140; */
+    --main-text-color: #011229;
+    --sub-text-color: rgb(119 124 133);
+    --card-color: #171717;
+    --accent-color: #6674cc;
+    --off-white: #f7f8fc;
+    --white: #fff;
+    --mytransition: all 0.3s ease;
+}
+
+body{
+    background-color: var(--white);
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======== NAVBAR ======= */
+nav {
+    background-color: var(--off-white);
+    min-height: 4rem;
+    box-shadow: rgba(157, 157, 157, 0.2) 0px 4px 10px;
+
+}
+
+.logo a {
+    color: var(--main-text-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.logo a span{
+    color: var(--accent-color);
+}
+
+.hover-link {
+    color: var(--main-text-color);
+    font-size: 1.2rem;
+    transition: var(--mytransition);
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+}
+
+/* ======== NAVBAR ENDS ======= */
+
+
+
+/* ======== Projects-Section ======= */
+.card {
+    overflow: hidden;
+    /* min-height: 350px; */
+    background-color: var(--off-white);
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);
+    transition: var(--mytransition);
+}
+.card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);
+}
+
+.img-box {
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);
+    overflow: hidden;
+    transition: all 1s ease;
+    /* position: relative; */
+}
+
+.card-title{
+    color: var(--main-text-color);
+}
+.card-text {
+    min-height: 100px;
+    color: var(--sub-text-color);
+}
+
+.project-link {}
+
+.github-icon {
+    color: var(--main-text-color);
+    font-size: 1.8rem;
+
+}
+
+.live-link {
+    text-align: center;
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* ======== Projects-Section ======= */

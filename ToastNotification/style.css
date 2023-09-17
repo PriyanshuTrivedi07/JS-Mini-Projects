@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;900&family=Raleway:wght@200;400;500;700;800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+#toastBox{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.mytoast{
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+.mytoast::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: var(--bs-alert-color);
+    width: 100%;
+    animation: anim 4s linear forwards;
+}
+
+@keyframes anim {
+    100%{
+        width: 0;
+    }
+}
