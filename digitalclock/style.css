@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Orbitron:wght@400;500;700;800;900&family=Poppins:wght@200;400;500;700;900&family=Raleway:wght@200;400;500;700;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #08001f, #30197f);
+    color: white;
+}
+
+.container {
+    position: relative;
+}
+
+.clock {
+    position: relative;
+    width: 50%;
+    height: 9rem;
+    border-radius: 1rem;
+}
+
+.time {
+    font-size: 3rem;
+    background-color: rgba(235, 0, 255, 0.11);
+    height: 100%;
+    border-radius: 1rem;
+    backdrop-filter: blur(40px);
+}
+
+.clock::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -32px;
+    left: -16px;
+    border-radius: 10%;
+    z-index: -12;
+    background-color: #f41b75;
+}
+
+.clock::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: -34px;
+    right: -18px;
+    border-radius: 50%;
+    z-index: -12;
+    background-color: #671bf4;
+}
+.time{
+    
+    box-shadow: 0px 10px 20px #00000082; 
+}
+
+.time span:nth-child(odd){
+    position: relative;
+    text-align: center;
+    min-width: 15%;
+    transition: all 0.5s;
+    text-shadow: 4px 4px 4px #000000a8;
+}
+.time span::after{
+    content: "";
+    font-size: 12px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-top: 0px;
+    transform: translateX(-50%);
+}
+#hour::after{
+    content: "Hours";
+}
+#min::after{
+    content: "Minutes";
+}
+#sec::after{
+    content: "Second";
+}
+
+
+
+@media screen and (max-width: 991px){
+    .clock{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 767px){
+    .clock{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 575px){
+    .clock{
+        /* width: 100%; */
+    }
+}
