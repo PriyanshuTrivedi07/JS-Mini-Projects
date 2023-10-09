@@ -10,7 +10,8 @@ body{
 }
 
 .popup{
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     position: absolute;
     top: 50%;
     left: 50%;
