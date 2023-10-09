@@ -49,10 +49,10 @@ body {
     height: 100%;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 100%;
     background-color: #000000db;
-    padding: 2rem;
-    scale: 0;
+    padding: 1rem;
+    /* scale: 0; */
     visibility: hidden;
     opacity: 0;
     z-index: 99;
@@ -60,13 +60,14 @@ body {
 }
 
 .fullImgBox img {
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 .open-fullImgBox {
-    scale: 1;
+    /* scale: 1; */
     visibility: visible;
     opacity: 1;
+    right: 0;
 }
 
 .close {
