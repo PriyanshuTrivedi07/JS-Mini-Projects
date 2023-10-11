@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;900&family=Raleway:wght@200;400;500;700;800&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: #dedede;
+}
+.product-card{
+    width: 100%;
+    height: 80vh;
+    /* border: 2px solid red; */
+    
+    background-color: white;
+}
+.small-imgs-col{
+    height: 100%;
+}
+.small-imgs-col img{
+    height: 16%;
+    border: 1px solid #535353;
+    margin: 0 0.3rem;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+.small-imgs-col img.active{
+    opacity: 1;
+}
+.small-imgs-col img:hover{
+    opacity: 1;
+}
+.big-img{
+    height: 100%;
+}
+.big-img img{
+    height: 100%;
+    transition: all 0.4s ease;
+}
+
+
+
+/* ======== Media Query */
+@media screen and (max-width: 575px) {
+    .product-card{
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    .small-imgs-col{
+        flex-direction: row !important;
+        height: auto;
+        width: 100%;
+        justify-content: center !important;
+    }
+    .small-imgs-col img{
+        height: auto;
+        width: 10%;
+    }
+    .big-img{
+        height: auto;
+        width: 80%;
+    }
+    .big-img img{
+        width: 100%;
+        height: auto;
+    }
+}
