@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Orbitron:wght@400;500;700;800;900&family=Poppins:wght@200;400;500;700;900&family=Raleway:wght@200;400;500;700;800&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	transition: all 0.5s ease;
+}
+
+body {
+	background-color: #0a0e0f;
+	color: #e9e9ea;
+	/* background: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover; */
+}
+
+.canvas {
+	color: #fff;
+	max-width: 550px;
+	margin: auto;
+}
+
+h1 {
+	width: 100%;
+	color: #ece5ff;
+}
+
+.rules {
+	/* background-color: #444444; */
+	background: linear-gradient(to right bottom,#555,#0a0e0f 96.66%)!important;
+	border-radius: 1rem;
+}
+.rules p{
+	color: #8293a0;
+}
+
+
+#guess {
+	font-size: 1.5rem;
+}
+
+#guessField {
+	font-size: 1.5rem;
+	padding: 0.5rem 2rem;
+	background-color: transparent;
+	color: #fff;
+}
+
+.primary-btn {
+	background-color: #242a2c;
+	padding: 0.5rem 1rem;
+	color: #ffffff;
+	margin: 1rem auto 0;
+	border-radius: 10px;
+	font-size: 20px;
+	border-style: none;
+	transition: all 0.2s ease-in-out;
+}
+
+.primary-btn:hover {
+	background-color: #191919de;
+}
+
+.primary-btn:active {
+	background-color: #000000de;
+}
+
+.disableBtn {
+	opacity: 0.5 !important;
+	cursor: not-allowed !important;
+}
+.resultParas p{
+	color: #8293a0;
+}
+.guesses,
+.lastResult {
+	background-color: #252525;
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: 1px solid #5e5e5e;
+    color: #8293a0;
+    display: inline-flex;
+    min-width: 37px;
+    min-height: 34px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#restart {
+	display: inline-block;
+	opacity: 0;
+	transform: scale(0);
+	transition: all 0.2s ease-in-out;
+}
+
+#restart.show {
+	opacity: 1;
+	transform: scale(1);
+}
+
+
