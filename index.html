@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="utf-8">
@@ -16,14 +16,15 @@
 </head>
 
 <body>
-    <nav class="sticky-top">
+    <nav class="sticky-top shadow">
         <div class="navbar d-flex align-items-center px-2 px-lg-5 px-md-4 py-3">
-            <div class="logo d-flex align-items-start justify-content-center">
-                <img src="images/JS_logo.webp" class="image-fluid" alt="javascript logo" width="40px">
-                <a href="/">Mini <span>Projects</span></a>
+            <div class="logo d-flex align-items-center justify-content-center">
+                <img src="images/JS_logo.webp" class="image-fluid me-1" alt="javascript logo" width="40px">
+                <a href="/" class="fs-2">Mini <span>Projects</span></a>
             </div>
-            <ul>
+            <ul class="d-flex align-items-center justify-content-center gap-2">
                 <li><a href="/" class="hover-link transition">Home</a></li>
+                <li><div class="theme-switch p-2" id="theme"><i class="bi bi-moon-stars d-flex"></i></div></li>
             </ul>
         </div>
     </nav>
